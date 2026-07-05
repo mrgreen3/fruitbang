@@ -26,14 +26,12 @@ mako
 rofi
 
 ## === FILE MANAGER & UTILITIES ===
-thunar
-thunar-volman
+lf
 gvfs
 udisks2
 
 ## === TEXT EDITORS ===
 neovim
-l3afpad
 
 ## === THEMES & FONTS ===
 adw-gtk-theme
