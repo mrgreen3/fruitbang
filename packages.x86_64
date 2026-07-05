@@ -32,7 +32,7 @@ gvfs
 udisks2
 
 ## === TEXT EDITORS ===
-vim
+neovim
 l3afpad
 
 ## === THEMES & FONTS ===
@@ -83,10 +83,12 @@ fzf
 eza
 
 ## === MEDIA APPLICATIONS ===
-firefox
+chromium
 imv
 
 ## === BUILD & DEVELOPMENT TOOLS ===
+base-devel
+git
 squashfs-tools
 rsync
 pv
