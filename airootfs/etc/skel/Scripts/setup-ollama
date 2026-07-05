@@ -8,12 +8,10 @@ echo
 
 if ! command -v ollama &>/dev/null; then
     echo "Installing Ollama..."
-    sudo pacman -S --noconfirm ollama
+    sudo pacman -Sy --noconfirm ollama
 else
     echo "Ollama already installed: $(ollama --version)"
 fi
-
-systemctl enable --now ollama
 
 echo
 echo "=== Pick a cloud model ==="
