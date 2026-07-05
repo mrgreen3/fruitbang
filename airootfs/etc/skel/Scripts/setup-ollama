@@ -8,7 +8,7 @@ echo
 
 if ! command -v ollama &>/dev/null; then
     echo "Installing Ollama..."
-    curl -fsSL https://ollama.com/install.sh | sh
+    sudo pacman -S --noconfirm ollama
 else
     echo "Ollama already installed: $(ollama --version)"
 fi
