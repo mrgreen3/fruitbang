@@ -118,28 +118,6 @@ window#waybar {
     color: @green;
 }
 
-/* ---------- Launchers ---------- */
-#custom-terminal,
-#custom-browser,
-#custom-launcher,
-#custom-files,
-#custom-editor {
-    font-family: "Symbols Nerd Font Mono";
-    font-size: 16px;
-    padding: 0 5px;
-}
-
-#custom-terminal  { color: #6abfa0; }
-#custom-browser   { color: #c4607a; }
-#custom-launcher  { color: #d4c87a; }
-#custom-files     { color: #4db8e8; }
-#custom-editor    { color: #f0f4f8; }
-
-#custom-terminal:hover,
-#custom-browser:hover,
-#custom-launcher:hover,
-#custom-files:hover,
-#custom-editor:hover { font-size: 22px; }
 
 /* ---------- Tray ---------- */
 #tray {

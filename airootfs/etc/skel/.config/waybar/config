@@ -6,13 +6,7 @@
   "modules-left": [
     "ext/workspaces"
   ],
-  "modules-center": [
-    "custom/terminal",
-    "custom/browser",
-    "custom/launcher",
-    "custom/files",
-    "custom/editor"
-  ],
+  "modules-center": [],
   "modules-right": [
     // "pulseaudio",
     "tray",
@@ -44,31 +38,6 @@
     "format-muted": "󰖁 {volume}%",
     "format-icons": ["󰕿", "󰖀", "󰕾"],
     "on-click": "pavucontrol"
-  },
-  "custom/terminal": {
-    "format": "",
-    "on-click": "foot",
-    "tooltip": false
-  },
-  "custom/browser": {
-    "format": "",
-    "on-click": "firefox",
-    "tooltip": false
-  },
-  "custom/launcher": {
-    "format": "",
-    "on-click": "~/Scripts/fruitbang-menu",
-    "tooltip": false
-  },
-  "custom/files": {
-    "format": "",
-    "on-click": "thunar",
-    "tooltip": false
-  },
-  "custom/editor": {
-    "format": "",
-    "on-click": "l3afpad",
-    "tooltip": false
   },
   "network": {
     "format-wifi": "󰤨",
