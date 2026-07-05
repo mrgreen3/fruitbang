@@ -72,6 +72,12 @@ fontconfig
 kbd
 expac
 
+## === DEVELOPER TOOLS ===
+ripgrep
+fd
+jq
+github-cli
+
 ## === COMMAND-LINE TOOLS ===
 openssh
 arch-install-scripts

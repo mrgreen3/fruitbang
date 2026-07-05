@@ -1,0 +1,33 @@
+set shell bash
+set shellopts '-eu'
+set ifs "\n"
+set scrolloff 5
+set icons true
+set period 1
+set hidden true
+set ratios 1:2:3
+set cleaner ~/.config/lf/cleaner
+
+# Open files
+cmd open &{{
+    case $(file --mime-type -Lb "$f") in
+        text/*) $TERMINAL -e $EDITOR "$f" ;;
+        image/*) imv "$f" ;;
+        *) xdg-open "$f" ;;
+    esac
+}}
+
+# Mkdir and touch
+cmd mkdir %mkdir -p "$@"
+cmd touch %touch "$@"
+
+# Trash instead of delete
+cmd trash %trash-put "$f"
+
+# Keybinds
+map <enter> open
+map D trash
+map md push :mkdir<space>
+map mf push :touch<space>
+map . set hidden!
+map <esc> quit
