@@ -76,7 +76,9 @@ expac
 ripgrep
 fd
 jq
+git
 github-cli
+opencode
 
 ## === COMMAND-LINE TOOLS ===
 openssh
@@ -87,12 +89,10 @@ fzf
 eza
 
 ## === MEDIA APPLICATIONS ===
-chromium
+firefox
 imv
 
 ## === BUILD & DEVELOPMENT TOOLS ===
-base-devel
-git
 squashfs-tools
 rsync
 pv
@@ -159,4 +159,3 @@ memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 archlinux-keyring
-
