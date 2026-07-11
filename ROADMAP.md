@@ -17,6 +17,7 @@ Think of it as a lightweight alternative to Omarchy: same opinionated philosophy
 | Editor | Neovim | The dev tool |
 | VCS | git + github-cli | Standard dev tooling |
 | Bar | Waybar (minimal config) | Clock, workspaces only — no clutter |
+| AI | opencode | Terminal AI coding agent — ships with cloud LLM, BYOK for own provider |
 | AUR | yay (via install script) | Full AUR access on demand, pulls base-devel as needed |
 | Theme | Solid colour background, consistent accent | Beauty through restraint — see issue #4 |
 
@@ -39,8 +40,9 @@ Think of it as a lightweight alternative to Omarchy: same opinionated philosophy
 
 ## v0.1 — Minimal Base (current)
 
-- [ ] Finalise package list against core stack above
-- [ ] Swap Chromium for Firefox
+- [x] Swap Chromium for Firefox
+- [x] Add opencode (Arch extra repos, tiny Go binary, ships with cloud LLM out of the box)
+- [x] Remove base-devel from ISO (yay install script handles on demand)
 - [ ] Strip Waybar to minimal config (clock + workspaces)
 - [ ] Configure Mango with Sway-like keybindings, no animations
 - [ ] yay install script bootstraps base-devel and AUR access
@@ -53,7 +55,6 @@ Think of it as a lightweight alternative to Omarchy: same opinionated philosophy
 - [ ] Consistent accent colour across Waybar, rofi, foot, Mango borders
 - [ ] Dark background, high-contrast text, single accent for focus
 - [ ] No custom fonts or icon packs beyond shipped defaults
-- [ ] rofi "Setup guide" action pointing to duck.ai or Perplexity
 
 ## v0.3 — Polish
 
@@ -76,3 +77,4 @@ Think of it as a lightweight alternative to Omarchy: same opinionated philosophy
 - [ ] rofi dynamic menus wired to system state
 - [ ] Post-install greenclaw integration (optional, user-driven)
 - [ ] Profile scripts for common dev setups (web, Python, Rust) — not bundled, just documented
+- [ ] opencode wired to Ollama cloud models via user API key
