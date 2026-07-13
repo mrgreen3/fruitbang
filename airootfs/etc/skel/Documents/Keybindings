@@ -31,7 +31,7 @@ FOCUS & MOVEMENT
 ───────────────────────
 
 Super + Tab             Next Window
-Super + Shift + ←/→/↑/↓  Focus Direction
+Super + Shift + ←/→/↑/↓  Swap Window Direction
 Ctrl + Shift + ←/→/↑/↓   Move Window (50px)
 Ctrl + Super + ←/→/↑/↓   Resize Window (50px)
 
@@ -40,9 +40,11 @@ WORKSPACES
 ───────────────────────
 
 Super + [1-9]           Switch to Workspace
-Super + Shift + [1-9]   Send Window to Workspace
 Super + Left/Right      Previous/Next Workspace
-Ctrl + Left/Right       Move with Window to Prev/Next
+Ctrl + Left/Right       Previous/Next (with window)
+
+Super + Shift + [1-9]   Send Window to Workspace (stay here)
+Super + Ctrl  + [1-9]   Send Window to Workspace (follow it)
 
 
 LAYOUT
