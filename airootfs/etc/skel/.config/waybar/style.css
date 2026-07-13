@@ -1,18 +1,19 @@
-/* ---------- FruitBang dev palette (TokyoNight Night) ---------- */
-@define-color bg      #1a1b26;
-@define-color surface #24283b;
-@define-color fg      #c0caf5;
-@define-color fg-dim  #565f89;
-@define-color accent  #7dcfff;
-@define-color red     #f7768e;
-@define-color green   #9ece6a;
-@define-color yellow  #e0af68;
+/* ---------- Palette pulled from sunset-lake.png ---------- */
+/* sky-top:#843978  horizon:#c0568b  water:#7b4178  treeline:#372666  glow:#f2729a */
+@define-color bg      #251848;
+@define-color surface #1e1540;
+@define-color fg      #ead6e8;
+@define-color fg-dim  #7b4178;
+@define-color accent  #c0568b;
+@define-color red     #c0568b;
+@define-color green   #b49ac0;
+@define-color yellow  #d4a8b8;
 
 /* ---------- Base ---------- */
 * {
     border-radius: 0;
     font-family: monospace;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -26,13 +27,13 @@ window#waybar {
 #custom-launcher {
     color: @accent;
     font-family: "Symbols Nerd Font Mono";
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 12px;
     margin: 2px 2px;
 }
 
 #custom-launcher:hover {
-    color: @fg;
+    color: #ffadd0;
 }
 
 /* ---------- Workspaces / tags ---------- */
@@ -49,21 +50,22 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: @bg;
-    background-color: @accent;
-    padding: 0 10px;
-    margin: 2px 2px;
+    color: @fg;
+    background: transparent;
     font-weight: bold;
-    border-radius: 6px;
 }
 
 #workspaces button:not(.empty):not(.active) {
-    color: @fg;
+    color: #c0568b;
 }
 
 #workspaces button:hover {
     color: @accent;
     background: transparent;
+}
+
+#workspaces button.active:hover {
+    color: #ffffff;
 }
 
 #workspaces button.urgent {
@@ -74,16 +76,10 @@ window#waybar {
 
 /* ---------- Clock ---------- */
 #clock {
-    color: @bg;
-    background-color: @accent;
+    color: @fg;
+    background-color: transparent;
+    padding: 0 14px;
     font-weight: bold;
-    padding: 4px 14px;
-    margin: 2px 4px;
-    border-radius: 6px;
-}
-
-#clock:hover {
-    opacity: 0.85;
 }
 
 /* ---------- Common section styling ---------- */
@@ -96,7 +92,7 @@ window#waybar {
 /* ---------- Network ---------- */
 #network {
     font-family: "Symbols Nerd Font Mono";
-    font-size: 16px;
+    font-size: 14px;
     color: @accent;
 }
 
@@ -106,7 +102,7 @@ window#waybar {
 
 /* ---------- Battery ---------- */
 #battery {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #battery.warning {
