@@ -121,3 +121,17 @@ window#waybar {
 #tray {
     padding: 0 6px;
 }
+
+/* ---------- Tooltips ---------- */
+tooltip {
+    background-color: @surface;
+    border: 1px solid @accent;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+tooltip label {
+    color: @fg;
+    font-family: monospace;
+    font-size: 13px;
+}

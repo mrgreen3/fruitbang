@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  "position": "bottom",
+  "position": "top",
   "height": 30,
   "spacing": 4,
   "modules-left": [
@@ -16,9 +16,10 @@
     "network"
   ],
   "custom/launcher": {
-    "format": "",
+    "format": "",
     "on-click": "rofi -show drun",
-    "tooltip": false
+    "tooltip": true,
+    "tooltip-format": "Main Menu"
   },
   "ext/workspaces": {
     "format": "{id}",
@@ -34,16 +35,16 @@
     "format-alt": "{:%A %d %B}",
     "tooltip-format": "<big>{:%A %d}</big>\n<tt>{calendar}</tt>",
     "calendar": {
-        "mode": "month",
-        "weeks-pos": "right",
-        "on-scroll": 1
+      "mode": "month",
+      "weeks-pos": "right",
+      "on-scroll": 1
     },
     "interval": 60
   },
   "network": {
-    "format-wifi": "󰤨",
-    "format-ethernet": "󰈀",
-    "format-disconnected": "󰤭",
+    "format-wifi": "8",
+    "format-ethernet": "0",
+    "format-disconnected": "d",
     "on-click": "bash -c 'networkmanager_dmenu'",
     "tooltip-format-wifi": "{essid} {signalStrength}%",
     "tooltip-format-ethernet": "{ipaddr}",
@@ -51,10 +52,16 @@
   },
   "battery": {
     "format": "{icon}",
-    "format-charging": "󰂄",
-    "format-full": "󰁹",
+    "format-charging": "4",
+    "format-full": "9",
     "format-unknown": "",
-    "format-icons": ["󰁻", "󰁼", "󰁽", "󰁾", "󰁿"],
+    "format-icons": [
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
     "states": {
       "warning": 30,
       "critical": 15
