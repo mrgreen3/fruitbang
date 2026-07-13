@@ -1,12 +1,12 @@
-/* ---------- Paint palette — pulled from paint.jpg ---------- */
-@define-color bg      #2f2532;
-@define-color surface #4e2d39;
-@define-color fg      #d4dce8;
-@define-color fg-dim  #936156;
-@define-color accent  #6e9b7a;
-@define-color red     #c4607a;
-@define-color green   #616793;
-@define-color yellow  #b4becc;
+/* ---------- FruitBang dev palette (TokyoNight Night) ---------- */
+@define-color bg      #1a1b26;
+@define-color surface #24283b;
+@define-color fg      #c0caf5;
+@define-color fg-dim  #565f89;
+@define-color accent  #7dcfff;
+@define-color red     #f7768e;
+@define-color green   #9ece6a;
+@define-color yellow  #e0af68;
 
 /* ---------- Base ---------- */
 * {
@@ -20,6 +20,19 @@ window#waybar {
     color: @fg;
     border: none;
     padding: 2px 0;
+}
+
+/* ---------- Launcher ---------- */
+#custom-launcher {
+    color: @accent;
+    font-family: "Symbols Nerd Font Mono";
+    font-size: 16px;
+    padding: 0 12px;
+    margin: 2px 2px;
+}
+
+#custom-launcher:hover {
+    color: @fg;
 }
 
 /* ---------- Workspaces / tags ---------- */
@@ -44,9 +57,8 @@ window#waybar {
     border-radius: 6px;
 }
 
-/* occupied but not focused — near-white */
 #workspaces button:not(.empty):not(.active) {
-    color: #e0e8ec;
+    color: @fg;
 }
 
 #workspaces button:hover {
@@ -75,26 +87,17 @@ window#waybar {
 }
 
 /* ---------- Common section styling ---------- */
-#tray, #pulseaudio, #battery, #network {
+#tray, #battery, #network {
     margin: 0;
     padding: 0 8px;
     color: @fg;
-}
-
-/* ---------- Pulseaudio ---------- */
-#pulseaudio {
-    font-size: 16px;
-}
-
-#pulseaudio.muted {
-    color: @red;
 }
 
 /* ---------- Network ---------- */
 #network {
     font-family: "Symbols Nerd Font Mono";
     font-size: 16px;
-    color: #9b8ad4;
+    color: @accent;
 }
 
 #network.disconnected {
@@ -117,7 +120,6 @@ window#waybar {
 #battery.charging {
     color: @green;
 }
-
 
 /* ---------- Tray ---------- */
 #tray {

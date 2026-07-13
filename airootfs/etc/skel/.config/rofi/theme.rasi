@@ -1,13 +1,13 @@
-/* Paint theme — colours pulled from paint.jpg, sage accent */
+/* FruitBang dev theme — TokyoNight Night palette */
 
 * {
-    bg:         #2f2532ff;
-    bg-alt:     #4e2d39ff;
-    fg:         #d4dce8ff;
-    fg-dim:     #936156ff;
-    accent:     #6e9b7aff;
-    urgent:     #c4607aff;
-    selected-fg:#2f2532ff;
+    bg:         #1a1b26ff;
+    bg-alt:     #24283bff;
+    fg:         #c0caf5ff;
+    fg-dim:     #565f89ff;
+    accent:     #7dcfffff;
+    urgent:     #f7768eff;
+    selected-fg:#1a1b26ff;
 
     background-color:   transparent;
     text-color:         @fg;
